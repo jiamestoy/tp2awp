@@ -1,5 +1,5 @@
 if(navigator.serviceWorker){
-  navigator.serviceWorker.register('/tp2awp/sw.js')
+  navigator.serviceWorker.register('sw.js')
 }
 
 const btnSave = document.querySelector('#btn-save');
