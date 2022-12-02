@@ -49,5 +49,6 @@
     "theme_color": "#1976d2",
     "description": "Aplicación para agragar notas",
     "scope": "/tp2awp",
-    "orientation": "portrait"
+    "orientation": "portrait",
+    "id": "/tp2awp/index.html"
 }
