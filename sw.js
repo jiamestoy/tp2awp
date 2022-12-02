@@ -5,20 +5,22 @@ self.addEventListener('install', evento => {
     const respCache = caches.open(CACHE_NAME).then( cache => {
 
         return cache.addAll([
-            '/tp2awp',
-            'tp2awp/index.html',
-            'tp2awp/app.js',
-            'tp2awp/icons/icon-72x72.png',
-            'tp2awp/icons/icon-96x96.png',
-            'tp2awp/icons/icon-128x128.png',
-            'tp2awp/icons/icon-144x144.png',
-            'tp2awp/icons/icon-152x152.png',
-            'tp2awp/icons/icon-192x192.png',
-            'tp2awp/icons/icon-384x384.png',
-            'tp2awp/icons/icon-512x512.png',
-            'tp2awp/manifest.json',
+            '/',
+            'index.html',
+            'app.js',
+            'icons/icon-72x72.png',
+            'icons/icon-96x96.png',
+            'icons/icon-128x128.png',
+            'icons/icon-144x144.png',
+            'icons/icon-152x152.png',
+            'icons/icon-192x192.png',
+            'icons/icon-384x384.png',
+            'icons/icon-512x512.png',
+            'manifest.json',
             'https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css',
-            'https://fonts.googleapis.com/icon?family=Material+Icons'
+            'https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js',
+            'https://fonts.googleapis.com/icon?family=Material+Icons',
+            'https://fonts.gstatic.com/s/materialicons/v139/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2'
           ])
           
     })
@@ -26,7 +28,6 @@ self.addEventListener('install', evento => {
     evento.waitUntil(respCache);   
 })
 
-/*
 self.addEventListener('fetch', evento => {
     const respuesta = fetch(  evento.request ).then( respNet => { 
         return caches.open( CACHE_NAME ).then( cache => {
@@ -38,11 +39,4 @@ self.addEventListener('fetch', evento => {
         return caches.match( evento.request  );
     })
     evento.respondWith(respuesta);
-})*/
-
-self.addEventListener('fetch', evento => {
-    console.log( evento.request );
-    const respuestaCache = caches.match(evento.request )
-    evento.respondWith(respuestaCache);
-
 })
