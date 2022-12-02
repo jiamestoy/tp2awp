@@ -48,6 +48,6 @@
     "background_color": "#1976d2",
     "theme_color": "#1976d2",
     "description": "Aplicación para agragar notas",
-    "scope": "/t2awp",
+    "scope": "/tp2awp",
     "orientation": "portrait"
 }
