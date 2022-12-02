@@ -5,6 +5,7 @@ self.addEventListener('install', evento => {
     const respCache = caches.open(CACHE_NAME).then( cache => {
 
         return cache.addAll([
+            '/tp2awp',
             'tp2awp/index.html',
             'tp2awp/app.js',
             'tp2awp/icons/icon-72x72.png',
