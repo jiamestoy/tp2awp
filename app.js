@@ -1,6 +1,6 @@
-
+if(navigator.serviceWorker){
   navigator.serviceWorker.register('sw.js')
-
+}
 
 const btnSave = document.querySelector('#btn-save');
 const textArea = document.querySelector('#text-1');

@@ -48,5 +48,7 @@
     "background_color": "#1976d2",
     "theme_color": "#1976d2",
     "description": "Aplicación para agragar notas",
-    "orientation": "portrait"
+    "scope": "",
+    "orientation": "portrait",
+    "id": "index.html"
 }
