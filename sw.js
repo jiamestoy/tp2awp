@@ -26,7 +26,7 @@ self.addEventListener('install', evento => {
     evento.waitUntil(respCache);   
 })
 
-
+/*
 self.addEventListener('fetch', evento => {
     const respuesta = fetch(  evento.request ).then( respNet => { 
         return caches.open( CACHE_NAME ).then( cache => {
@@ -38,4 +38,11 @@ self.addEventListener('fetch', evento => {
         return caches.match( evento.request  );
     })
     evento.respondWith(respuesta);
+})*/
+
+self.addEventListener('fetch', evento => {
+    console.log( evento.request );
+    const respuestaCache = caches.match(evento.request )
+    evento.respondWith(respuestaCache);
+
 })
