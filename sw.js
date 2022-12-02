@@ -5,18 +5,18 @@ self.addEventListener('install', evento => {
     const respCache = caches.open(CACHE_NAME).then( cache => {
 
         return cache.addAll([
-            '/',
-            'index.html',
-            'app.js',
-            'icons/icon-72x72.png',
-            'icons/icon-96x96.png',
-            'icons/icon-128x128.png',
-            'icons/icon-144x144.png',
-            'icons/icon-152x152.png',
-            'icons/icon-192x192.png',
-            'icons/icon-384x384.png',
-            'icons/icon-512x512.png',
-            'manifest.json',
+            '/tp2awp',
+            'tp2awp/index.html',
+            'tp2awp/app.js',
+            'tp2awp/icons/icon-72x72.png',
+            'tp2awp/icons/icon-96x96.png',
+            'tp2awp/icons/icon-128x128.png',
+            'tp2awp/icons/icon-144x144.png',
+            'tp2awp/icons/icon-152x152.png',
+            'tp2awp/icons/icon-192x192.png',
+            'tp2awp/icons/icon-384x384.png',
+            'tp2awp/icons/icon-512x512.png',
+            'tp2awp/manifest.json',
             'https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css',
             'https://fonts.googleapis.com/icon?family=Material+Icons'
           ])
