@@ -5,7 +5,6 @@ self.addEventListener('install', evento => {
     const respCache = caches.open(CACHE_NAME).then( cache => {
 
         return cache.addAll([
-            '/',
             'index.html',
             'app.js',
             'icons/icon-72x72.png',
