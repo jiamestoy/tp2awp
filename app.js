@@ -1,5 +1,5 @@
 if(navigator.serviceWorker){
-  navigator.serviceWorker.register('sw.js')
+  navigator.serviceWorker.register('jiamestoy.github.io/tp2awp/sw.js')
 }
 
 const btnSave = document.querySelector('#btn-save');
